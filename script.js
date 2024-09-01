@@ -39,6 +39,7 @@ async function fetchWeather(city) {
         description.innerHTML = `${weather.description}`;
         humidity.innerHTML = `${main.humidity}%`;
         windSpeed.innerHTML = `${wind.speed} m/s`;
+        temp_sup.classList.remove('hidden');
 
         // Set weather icon based on the icon code returned by the API
         weatherIcon.src = `http://openweathermap.org/img/wn/${weather.icon}.png`;
@@ -66,3 +67,14 @@ searchBtn.addEventListener("click", () => {
         alert('Please enter a city name');
     }
 });
+
+searchBar.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        const city = searchBar.value.trim();
+        if (city) {
+            fetchWeather(city);
+        } else {
+            alert('Please enter a city name');
+        }
+    }
+})

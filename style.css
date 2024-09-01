@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 75vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.search-bar{
+    position: relative;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: -10px;
+    height: 30px;
+    width: 300px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: scale .3s;
+    
+}
+
+.search-bar:hover{
+    scale: 1.01;
+}
+
+.fa-search{
+    z-index: 1;
+    margin-left: -30px;
+    margin-top: 38px;
+    color: rgb(0, 0, 0);
+    transition: scale .3s;
+}
+
+.fa-search:hover{
+    color: rgb(113, 109, 109);
+}
+
+.weather-icon{
+    position: absolute;
+    top: 22%;
+    width: 230px;
+    height: 230px;
+}
+
+.description{
+    position: absolute;
+    top: 62%;
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+    color: black;
+}
+.temp{
+    position: absolute;
+    top: 55%;
+    font-size: 40px;
+    font-weight: 750;
+    text-align: center;
+    color: black;
+}
+.degree{
+    position: absolute;
+    top: 55%;
+    left: 51.5%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: black
+}
+.fa-droplet{
+    position: absolute;
+    top: 75%;
+    left: 38%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: black
+}
+.humid-container{
+    position: absolute;
+    top: 74%;
+    left: 40.5%;
+}
+.humid-degree{
+    font-weight: 750;
+}
+
+.fa-wind{
+    position: absolute;
+    top: 75%;
+    left: 53%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: black
+}
+.windSpeed-container{
+    position: absolute;
+    top: 74%;
+    left: 56%;
+}
+.windSpeed{
+    font-weight: 750;
+}
+.hide{
+    display: none;
+}

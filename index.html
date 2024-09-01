@@ -8,19 +8,32 @@
 </head>
 <body>
     <div class="container">
-        <h1>Weather App</h1>
+        <h1>i Weather</h1>
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Enter city name">
-            <button class="search-btn">Search</button>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="weather-info">
             <img class="weather-icon" src="weather_png.png" alt="Weather Icon">
-            <div class="temp">Temperature: </div>
-            <div class="description">Description: </div>
-            <div class="humid-degree">Humidity: </div>
-            <div class="windSpeed">Wind Speed: </div>
+            <div class="temp">25</div><sup class="temp-sup">°C</sup>
+            <div class="description">Feels hot</div>
+            
+            <div class="bottomInfo">
+
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="humid-degree">Humidity: </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="windSpeed">Wind Speed: </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/1504713ae4.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

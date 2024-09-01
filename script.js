@@ -32,8 +32,8 @@ async function fetchWeather(city) {
         const main = data.main;
         const wind = data.wind;
 
-        temperature.innerHTML = `Temperature: ${(main.temp-32)*.5556}°C`;
-        description.innerHTML = `Description: ${weather.description}`;
+        temperature.innerHTML = `${Math.floor((main.temp-32)*.56)}`;
+        description.innerHTML = `${weather.description}`;
         humidity.innerHTML = `Humidity: ${main.humidity}%`;
         windSpeed.innerHTML = `Wind Speed: ${wind.speed} m/s`;
 

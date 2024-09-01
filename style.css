@@ -1,125 +1,58 @@
-*{
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}
-
-body{
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
-    height: 100vh;
-    overflow: hidden;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    height: 100vh;
 }
 
-.container{
-    height: 75vh;
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-.search-bar{
-    position: relative;
-    padding-left: 10px;
-    margin-top: 30px;
-    margin-left: -10px;
-    height: 30px;
-    width: 300px;
-    overflow: hidden;
-    background-color: #fff;
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
     border-radius: 8px;
-    transition: scale .3s;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search-bar:hover{
-    scale: 1.01;
+.search-container {
+    margin-bottom: 20px;
 }
 
-.fa-search{
-    z-index: 1;
-    margin-left: -30px;
-    margin-top: 38px;
-    color: rgb(0, 0, 0);
-    transition: scale .3s;
+.search-bar {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.fa-search:hover{
-    color: rgb(113, 109, 109);
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.weather-icon{
-    position: absolute;
-    top: 22%;
-    width: 230px;
-    height: 230px;
+.search-btn:hover {
+    background-color: #0056b3;
 }
 
-.description{
-    position: absolute;
-    top: 62%;
-    font-size: 30px;
-    font-weight: 550;
-    text-align: center;
-    color: black;
-}
-.temp{
-    position: absolute;
-    top: 55%;
-    font-size: 40px;
-    font-weight: 750;
-    text-align: center;
-    color: black;
-}
-.degree{
-    position: absolute;
-    top: 55%;
-    left: 51.5%;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: black
-}
-.fa-droplet{
-    position: absolute;
-    top: 75%;
-    left: 38%;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    color: black
-}
-.humid-container{
-    position: absolute;
-    top: 74%;
-    left: 40.5%;
-}
-.humid-degree{
-    font-weight: 750;
+.weather-info {
+    margin-top: 20px;
 }
 
-.fa-wind{
-    position: absolute;
-    top: 75%;
-    left: 53%;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    color: black
+.weather-icon {
+    width: 100px;
+    height: 100px;
 }
-.windSpeed-container{
-    position: absolute;
-    top: 74%;
-    left: 56%;
-}
-.windSpeed{
-    font-weight: 750;
-}
-.hide{
-    display: none;
+
+.temp, .description, .humid-degree, .windSpeed {
+    font-size: 18px;
+    margin: 10px 0;
 }
